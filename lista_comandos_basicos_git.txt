@@ -1,0 +1,52 @@
+LISTA DE COMANDOS BÁSICOS:
+
+Descrição do comando                        Powershell                 Prompt de Comando
+Listar o conteúdo da pasta atual                ls                           dir
+Limpar o conteúdo do terminal             CTRL + L ou cls                    cls
+Navegar entre pastas                    cd ./pasta_destino             cd ./pasta_destino
+Criar uma nova pasta                     mkdir nome_pasta               mkdir nome_pasta
+Criar um novo arquivo              echo “conteúdo”> destino.txt     echo “conteúdo” > destino.txt
+Remover pasta                          rm –r ./nome_pasta               rmdir ./nome_pasta
+Remover arquivo                        rm –r ./arquivo.txt                del arquivo.txt
+Ver o conteúdo de um arquivo          cat ./arquivo.txt                  more ./arquivo.txt
+
+LISTA DE COMANDOS GIT:
+
+Criar repositório                      git init
+Ver comandos que estão no stage        git status
+Adicionar arquivo no stage             git add nome-do-arquivo
+Remover arquivo do stage               git rm --cached nome_do_arquivo
+Adicionar todos os arquivos no stage   git add
+Salvar alterações                      git commit
+Salvar alterações e criar um commit
+	sem acessar o editor	       git commit -m "mensagem/descrição do commit"
+Adicionar arquivo no stage e já
+	salvar a alteração	       git commit -am "mensagem/descrição do commit"
+Visualizar registro de commit          git log
+Visualizar um número específico
+	dos últimos commits	       git log -n 2 (ou outro número)
+Visualizar versao resumida de commits  git log --one line
+Visualizar registro detadalhado
+	dos commits registrados        git log --stat
+Desfazer alterações e arquivos que
+	ainda não foram adicionados
+	no stage		       git checkout nome-do-arquivo
+
+"Viajar" entre os commits	       git checkout ID-do-commit
+Reverter o último commit (cria um
+	commit o revertendo)	       git revert HEAD
+Visualizar branchs que fazem parte
+	do repositório		       git branch que é igual a git branch --list
+Listar ramificações remotas            git branch -a
+Criar nova branch	               git branch nome-da-nova-braanch
+Criar noca branch com referência
+	em outra já existente	       git branch nome-da-nova-branch nome-da-branch-de-referência
+Navegar entre branches                 git checkout nome-da-branch
+Criar e trocar para a nova branch      git checkout -b noma-da-branch
+Deletar uma branch                     git checkout -D nome-da-branch
+Mesclar duas branches (trazendo as
+	alterações pra branch atual)   git merge nome-da-branch
+Mesclar branches criando um commit
+	para registro                  git merge --no-ff Nome-da-branch
+Copiar um repositório do Github        git clone link-do-repositório -l nome-da-pasta-destino
+	(se não usar -l será criada uma pasta com o nome do repositório)
