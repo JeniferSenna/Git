@@ -50,3 +50,7 @@ Mesclar branches criando um commit
 	para registro                  git merge --no-ff Nome-da-branch
 Copiar um repositório do Github        git clone link-do-repositório -l nome-da-pasta-destino
 	(se não usar -l será criada uma pasta com o nome do repositório)
+
+site que usei como referência para este texto além das aulas sobre Gi da EBAC:
+
+https://www.atlassian.com/br/git/glossary#commands
